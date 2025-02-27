@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: #000;
+    align-items: center;
+  }
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color:#0077A1;
+    border: 2px solid white;
+    font-family:'Poppins', sans-serif;
+    border-radius: 15px;
+    position: fixed;
+    width: 95%;
+    z-index: 999;
+}
+
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #0077A1;
+    padding: 7px 12px;
+    font-size: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-custom{
+    background-color: #0077A1;
+    border-radius: 10px;
+
+}
+
+.navbar.navbar-custom {
+    border-radius: 30px;
+}
+
+.hd-txt{
+    color: #fff !important;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    position:relative;
+}
+
+.hd-txt::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#fff;
+    position:absolute;
+    left: 8px;
+    bottom:12px;
+    transition: 0.3s;
+}
+
+.hd-txt:hover::after{ 
+    width: 80px;
+}
+
+.fon{
+    color:#FFFFFF !important;
+    font-size: 30px;
+    font-weight: 1000;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none; 
+}
+
+.hamburger-toggler-icon .bar {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+
+#drive{
+    height: 30px;
+    width: auto;
+    transition: 0.2s ease-in-out;
+}
+
+#drive:hover{
+    transform: scale(1.0); 
+}
+
+section{
+    margin-top:10px;
+}
+
+.image {
+    max-width: 70%;
+    height: 80; 
+    transition: transform 0.2s; 
+    border-radius: 20px;
+    margin: 20px;
+    position:relative;
+    border: 5px solid #0077A1;
+}
+
+.double-img-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    height: 35px;
+    background-color: #0077A1;
+    padding-top: 2px;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    bottom:6px;
+    width: 95%;
+    border: 2px solid #fff;
+    z-index: 999;
+}
+
+@media(max-width:768px){
+    .image{
+        margin: 20px 0px;
+    }
+}
+@media(min-width:950px){
+    .image:hover {
+        transform: scale(1.5); 
+        z-index:999;
+    }
+    #tech-last-img {
+        transform:translateY(-250px);
+    }
+}
